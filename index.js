@@ -14,7 +14,7 @@ app.listen(process.env.PORT || 4000, () => {
 app.use(express.json({ limit: "50mb" }));
 //app.use(express.urlencoded({limit: '50mb'}));
 const DB =
-  "mongodb+srv://instaclone:XsqMphA0HgJXiexS@cluster0.estrjom.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb://localhost:27017";
 mongoose
   .connect(DB)
   .then(() => {
