@@ -14,7 +14,7 @@ app.listen(process.env.PORT || 4000, () => {
 app.use(express.json({ limit: "50mb" }));
 //app.use(express.urlencoded({limit: '50mb'}));
 const DB =
-  "mongodb://localhost:27017";
+  "mongodb+srv://mimomandal789:zownXAqMCwRn91WU@cluster0.aubk96u.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(DB)
   .then(() => {
@@ -62,3 +62,5 @@ app.get("/posts", (req, res) => {
 
 // middleware
 app.use("/post", postController);
+//zownXAqMCwRn91WU
+//mimomandal789
